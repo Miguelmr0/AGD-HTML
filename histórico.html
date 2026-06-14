@@ -1,1 +1,233 @@
-aa
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Histórico de Saúde - Esther Maria</title>
+  <link rel="stylesheet" href="stylecad.css" />
+</head>
+<body>
+  <div class="screen">
+
+    <header class="header">
+      <button class="btn-icon" aria-label="Voltar">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M12.5 15L7.5 10L12.5 5" stroke="#1A1A2E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <h1 class="header-title">Histórico de Saúde</h1>
+      <button class="btn-icon" aria-label="Mais opções">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <circle cx="10" cy="4" r="1.5" fill="#1A1A2E"/>
+          <circle cx="10" cy="10" r="1.5" fill="#1A1A2E"/>
+          <circle cx="10" cy="16" r="1.5" fill="#1A1A2E"/>
+        </svg>
+      </button>
+    </header>
+
+    <div class="card patient-card">
+      <div class="avatar-wrap">
+        <img
+          class="avatar"
+          src="imagens/Esther Howard.png"
+        />
+        <span class="badge-risco">RISCO</span>
+      </div>
+      <h2 class="patient-name">Esther Maria</h2>
+      <p class="patient-age">2 meses</p>
+      <p class="patient-id">ID Paciente: #REC-2024-08912</p>
+      <div class="tag-list">
+        <span class="tag tag--danger">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M7 1L13 12H1L7 1Z" stroke="#E53935" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M7 5V8" stroke="#E53935" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="7" cy="10.5" r="0.75" fill="#E53935"/>
+          </svg>
+          Febre Alta Recorrente
+        </span>
+        <span class="tag tag--info">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <circle cx="7" cy="7" r="5.5" stroke="#1565C0" stroke-width="1.3"/>
+            <path d="M7 4V7.5L9 9" stroke="#1565C0" stroke-width="1.3" stroke-linecap="round"/>
+          </svg>
+          Vigilância Ativa
+        </span>
+      </div>
+    </div>
+
+    <div class="card vitals-card">
+      <div class="vitals-grid">
+        <div class="vital-item">
+          <span class="vital-label">Peso</span>
+          <span class="vital-value">4.8 kg</span>
+        </div>
+        <div class="vital-item">
+          <span class="vital-label">Altura</span>
+          <span class="vital-value">56 cm</span>
+        </div>
+        <div class="vital-divider"></div>
+        <div class="vital-item">
+          <span class="vital-label">Sangue</span>
+          <span class="vital-value vital-value--red">O+</span>
+        </div>
+        <div class="vital-item">
+          <span class="vital-label">Saturação</span>
+          <span class="vital-value">98%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card alergias-card">
+      <div class="alergias-header">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <path d="M9 2L16 14H2L9 2Z" stroke="#E08B00" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M9 7V10" stroke="#E08B00" stroke-width="1.6" stroke-linecap="round"/>
+          <circle cx="9" cy="12.5" r="0.8" fill="#E08B00"/>
+        </svg>
+        <span class="alergias-title">Alergias &amp; Condições</span>
+      </div>
+      <ul class="alergias-list">
+        <li class="alergia-item alergia-item--red">
+          <span class="dot dot--red"></span>
+          Intolerância à Lactose
+        </li>
+        <li class="alergia-item alergia-item--yellow">
+          <span class="dot dot--yellow"></span>
+          Prematuridade (34 sem)
+        </li>
+      </ul>
+    </div>
+
+    <section class="section">
+      <h2 class="section-title">Indicadores de Desenvolvimento</h2>
+
+     <div class="card indicator-card">
+  <div class="indicator-icon indicator-icon--green">
+    <img
+      src="imagens/Background.png"
+      alt="Imagem"
+      class="indicator-img"
+    >
+  </div>
+
+  <div class="indicator-info">
+    <span class="indicator-label">Motor</span>
+    <span class="indicator-status">
+      <span class="dot dot--green"></span>
+      Normal
+    </span>
+  </div>
+</div>
+
+      <div class="card indicator-card">
+  <div class="indicator-icon indicator-icon--yellow">
+    <img
+      src="imagens/Background (1).png"
+      alt="Imagem"
+      class="indicator-img"
+    >
+  </div>
+
+  <div class="indicator-info">
+    <span class="indicator-label">Nutrição</span>
+    <span class="indicator-status">
+      <span class="dot dot--yellow"></span>
+      Observação
+    </span>
+  </div>
+</div>
+<div class="card indicator-card">
+  <div class="indicator-icon indicator-icon--blue">
+    <img
+      src="imagens/Background (2).png"
+      alt="Imagem"
+      class="indicator-img"
+    >
+  </div>
+
+  <div class="indicator-info">
+    <span class="indicator-label">Vacinação</span>
+    <span class="indicator-status">
+      <span class="dot dot--green"></span>
+      Em dia
+    </span>
+  </div>
+</div>
+
+   
+    <div class="action-buttons">
+      <button class="btn btn--primary">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <rect x="2" y="3" width="14" height="12" rx="2" stroke="white" stroke-width="1.5"/>
+          <path d="M5 7H13M5 10H10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        form de visita
+      </button>
+      <button class="btn btn--secondary">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <rect x="2" y="3" width="14" height="12" rx="2" stroke="#1A237E" stroke-width="1.5"/>
+          <path d="M9 6V12M6 9H12" stroke="#1A237E" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        Prescrever
+      </button>
+    </div>
+
+    <div class="action-buttons action-buttons--single">
+      <button class="btn btn--outline">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+          <circle cx="9" cy="8" r="5" stroke="#1A237E" stroke-width="1.5"/>
+          <path d="M9 13V16" stroke="#1A237E" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M6 16H12" stroke="#1A237E" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        Solicitar Exame
+      </button>
+    </div>
+]
+    <section class="section">
+      <div class="section-header">
+        <h2 class="section-title">Histórico de Atendimentos</h2>
+        <a href="#" class="link-ver-tudo">Ver tudo</a>
+      </div>
+
+      <div class="card atendimento-card">
+        <div class="atendimento-header">
+          <div class="atendimento-icon atendimento-icon--blue">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <circle cx="9" cy="7" r="3.5" stroke="#1E88E5" stroke-width="1.4"/>
+              <path d="M3 16C3 13.2 5.7 11 9 11C12.3 11 15 13.2 15 16" stroke="#1E88E5" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="atendimento-meta">
+            <span class="atendimento-nome">Dr. Marcos Oliveira</span>
+            <span class="atendimento-tipo">Pediatra Geral</span>
+          </div>
+          <span class="atendimento-data">14 Out 2024</span>
+        </div>
+        <div class="atendimento-obs atendimento-obs--red">
+          <p><strong>Observação: Febre persistente (38.5°C) relatada há 48h. Início de tosse produtiva. Pulmão limpo ao exame físico inicial.</strong></p>
+        </div>
+      </div>
+
+      <div class="card atendimento-card">
+        <div class="atendimento-header">
+          <div class="atendimento-icon atendimento-icon--teal">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <rect x="3" y="3" width="12" height="12" rx="2" stroke="#00897B" stroke-width="1.4"/>
+              <path d="M6 9H12M9 6V12" stroke="#00897B" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="atendimento-meta">
+            <span class="atendimento-nome">Enf. Luciana Costa</span>
+            <span class="atendimento-tipo">Triagem de Rotina</span>
+          </div>
+          <span class="atendimento-data">02 Out 2024</span>
+        </div>
+        <div class="atendimento-obs atendimento-obs--blue">
+          <p><strong>Observação: Atualização de medidas antropométricas. Ganho de peso dentro da curva esperada. Aleitamento materno exclusivo.</strong></p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
